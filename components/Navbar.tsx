@@ -37,14 +37,14 @@ export default function Navbar() {
       }`}
     >
       <div className="container-lux">
-        <div className="flex h-[80px] md:h-[96px] items-center justify-between">
+        <div className="flex items-center justify-between">
           <Link href="/" className="flex items-center group">
             <Image 
               src="/logo.png" 
               alt="Luxury Hotel Supplies Logo" 
-              width={240}
-              height={75}
-              className="w-[160px] md:w-[240px] h-[50px] md:h-[75px] object-contain py-1"
+              width={100}
+              height={32}
+              className="object-contain"
               priority
             />
           </Link>

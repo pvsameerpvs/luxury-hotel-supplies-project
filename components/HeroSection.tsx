@@ -126,7 +126,7 @@ export default function HeroSection({
         )}
 
         <div className="absolute inset-0 bg-lux-radial" />
-        <div className="absolute inset-0 bg-gradient-to-b from-black/60 via-black/60 to-black/60" />
+        <div className="absolute inset-0 bg-gradient-to-b from-black/20 via-black/10 to-black/20" />
       </div>
 
       <div className={`relative container-lux flex ${height} items-center`}>

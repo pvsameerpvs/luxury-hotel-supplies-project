@@ -87,12 +87,19 @@ export default function ProductsPage() {
       />
 
       {CATEGORIES.map((cat, i) => (
-        <section key={cat.id} className={`section-padding ${i % 2 !== 0 ? 'bg-gray-50 border-y border-borderGray' : ''}`} id={cat.id}>
-          <div className="container-lux">
+        <section key={cat.id} className={`section-padding ${i % 2 !== 0 ? 'bg-gray-50 border-y border-borderGray' : ''}`} id={cat.id} >
+          <div className="container-lux" >
             <SectionTitle eyebrow="Category" title={cat.title} subtitle={cat.subtitle} />
             <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 mt-8">
               {cat.items.map((item) => (
-                <ProductCard key={item.title} title={item.title} badge={cat.title} image={item.image} />
+                <ProductCard 
+                  key={item.title} 
+                  title={item.title} 
+                  badge={cat.title} 
+                  image={item.image} 
+                  href={`/products/${item.title.toLowerCase().replace(/[^a-z0-9]+/g, '-')}`}
+                  linkLabel="View Details"
+                />
               ))}
             </div>
           </div>

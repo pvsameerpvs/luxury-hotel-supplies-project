@@ -130,14 +130,14 @@ export default function HeroSection({
       </div>
 
       <div className={`relative container-lux flex ${height} items-center`}>
-        <div className="w-full max-w-3xl">
+        <div className="w-full max-w-3xl bg-black/30 backdrop-blur-sm p-8 md:p-12 rounded-[24px] border border-white/10 shadow-2xl">
 
           <h1 className="mt-4 font-bold text-4xl md:text-6xl leading-[1.05] text-gold animate-fadeUp">
             {title}
           </h1>
 
           {subtitle ? (
-            <p className="mt-5 font-medium text-base md:text-lg text-white max-w-2xl animate-fadeUp">
+            <p className="mt-5 font-medium text-base md:text-lg text-white/90 max-w-2xl animate-fadeUp">
               {subtitle}
             </p>
           ) : null}
@@ -148,12 +148,8 @@ export default function HeroSection({
                 {ctaText}
               </Link>
             ) : null}
-            <Link href="/contact#contact-form" className="btn-ghost">
-              Request Quote
-            </Link>
+            
           </div>
-
-          
 
         </div>
 

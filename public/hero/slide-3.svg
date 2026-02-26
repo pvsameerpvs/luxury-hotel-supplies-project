@@ -1,0 +1,42 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1920" height="1080" viewBox="0 0 1920 1080">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="0.5" stop-color="#FFFDF5"/>
+      <stop offset="1" stop-color="#FFFFFF"/>
+    </linearGradient>
+    <radialGradient id="glow" cx="50%" cy="15%" r="70%">
+      <stop offset="0" stop-color="#D4AF37" stop-opacity="0.25"/>
+      <stop offset="1" stop-color="#D4AF37" stop-opacity="0"/>
+    </radialGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D4AF37"/>
+      <stop offset="1" stop-color="#B68C28"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="1920" height="1080" fill="url(#bg)"/>
+  <rect width="1920" height="1080" fill="url(#glow)"/>
+
+  <g opacity="0.65">
+    <path d="M80 1010 C 240 920, 430 870, 650 900 C 900 935, 1010 840, 1200 780 C 1410 705, 1560 730, 1700 680 C 1800 645, 1860 600, 1920 560" fill="none" stroke="url(#gold)" stroke-width="6"/>
+    <path d="M0 980 C 220 860, 460 815, 670 850 C 940 900, 1040 795, 1230 740 C 1460 670, 1610 700, 1750 650 C 1830 622, 1880 595, 1920 570" fill="none" stroke="#B68C28" stroke-opacity="0.22" stroke-width="4"/>
+  </g>
+
+  <g opacity="0.9">
+    <circle cx="1550" cy="780" r="210" fill="#D4AF37" fill-opacity="0.07"/>
+    <circle cx="1550" cy="780" r="120" fill="#B68C28" fill-opacity="0.07"/>
+  </g>
+
+  <g opacity="0.55">
+    <rect x="220" y="240" width="620" height="420" rx="22" fill="#FFFFFF"/>
+    <rect x="220" y="240" width="620" height="420" rx="22" fill="url(#gold)" fill-opacity="0.06"/>
+    <rect x="280" y="310" width="280" height="12" rx="6" fill="#111827" fill-opacity="0.10"/>
+    <rect x="280" y="345" width="420" height="10" rx="5" fill="#111827" fill-opacity="0.07"/>
+    <rect x="280" y="410" width="190" height="12" rx="6" fill="url(#gold)" fill-opacity="0.28"/>
+    <rect x="280" y="455" width="520" height="10" rx="5" fill="#111827" fill-opacity="0.06"/>
+    <rect x="280" y="480" width="460" height="10" rx="5" fill="#111827" fill-opacity="0.06"/>
+    <rect x="280" y="505" width="500" height="10" rx="5" fill="#111827" fill-opacity="0.06"/>
+    <rect x="280" y="560" width="190" height="44" rx="12" fill="url(#gold)" fill-opacity="0.35"/>
+  </g>
+</svg>

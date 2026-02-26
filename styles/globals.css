@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html {
+  scroll-behavior: smooth;
+}
+
+@layer base {
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading text-gold;
+  }
+}
+
+@layer components {
+  .container-lux {
+    @apply mx-auto w-full max-w-6xl px-6;
+  }
+
+  .section-padding {
+    @apply py-16;
+  }
+
+  .btn-gold {
+    @apply bg-gradient-to-r from-gold-light to-gold text-white font-medium py-3 px-8 rounded-luxury shadow-luxury transition-all duration-300 hover:from-gold hover:to-gold-dark hover:shadow-luxuryHover hover:-translate-y-0.5;
+  }
+
+  .btn-ghost {
+    @apply bg-white border border-borderGray text-foreground font-medium py-3 px-8 rounded-luxury transition-all duration-300 hover:bg-gray-50;
+  }
+
+  .card-lux {
+    @apply bg-white border border-borderGray rounded-luxury shadow-sm hover:shadow-luxury transition-all duration-300;
+  }
+
+  .lux-eyebrow {
+    @apply text-xs font-semibold uppercase tracking-[0.2em] text-muted;
+  }
+
+  .text-muted {
+    @apply text-gray-600;
+  }
+
+  .lux-eyebrow {
+    @apply inline-flex items-center gap-2 rounded-full border border-borderGray bg-white/70 px-4 py-2 text-xs font-semibold tracking-[0.14em] uppercase text-gold;
+  }
+
+  .glass-card {
+    @apply bg-white border border-borderGray rounded-luxury shadow-sm hover:shadow-luxury transition-all duration-300 p-6;
+  }
+}

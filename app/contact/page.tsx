@@ -32,7 +32,7 @@ export default function ContactPage() {
               <SectionTitle
                 eyebrow="Direct Contact"
                 title="Connect with our team"
-                subtitle="Reach our corporate headquarters directly by phone, email, or visit our executive office in the Ajman Free Zone."
+                subtitle="Reach our corporate headquarters directly by phone, email, or visit our executive office in Hor Al Anz."
               />
 
               <div className="mt-8 space-y-6">
@@ -45,9 +45,8 @@ export default function ContactPage() {
                   <div>
                     <h3 className="font-heading text-lg font-semibold text-foreground mb-1">Corporate Office</h3>
                     <p className="text-sm text-muted leading-relaxed">
-                      CWS-IV-155750, 26th Floor,<br />
-                      Amber Gem Tower, Ajman Free Zone,<br />
-                      Ajman, UAE
+                      Ground floor,<br />
+                      Ahmad building hour al Anaz
                     </p>
                   </div>
                 </div>
@@ -105,11 +104,11 @@ export default function ContactPage() {
               
               <div className="mt-8 rounded-[24px] overflow-hidden shadow-luxuryHover border border-borderGray bg-white">
                 <iframe
-                  title="Map: Amber Gem Tower, Ajman Free Zone"
+                  title="Map: Ahmad Building, Hor Al Anz"
                   className="h-[250px] w-full brightness-95 contrast-125 grayscale-[30%]" // Adds a subtle premium filter to google maps
                   loading="lazy"
                   referrerPolicy="no-referrer-when-downgrade"
-                  src="https://www.google.com/maps?q=Amber%20Gem%20Tower%20Ajman%20Free%20Zone&output=embed"
+                  src="https://www.google.com/maps?q=Ahmad%20Building%20Hor%20Al%20Anz&output=embed"
                 />
               </div>
             </div>

@@ -79,7 +79,7 @@ export default function Footer() {
                   <LocationOn className="text-gold" fontSize="small" />
                 </div>
                 <span className="text-gray-400 leading-relaxed pt-2">
-                  CWS-IV-155750, 26th Floor, Amber Gem Tower, Ajman Free Zone, Ajman, UAE
+                  Ground floor, Ahmad building hour al Anaz
                 </span>
               </li>
               

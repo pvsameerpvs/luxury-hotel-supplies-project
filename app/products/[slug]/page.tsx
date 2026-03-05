@@ -188,6 +188,38 @@ const getProductDetails = (slug: string) => {
   return products[slug]
 }
 
+export function generateStaticParams() {
+  const slugs = [
+    'floor-cleaning-wiper',
+    'cotton-twist-mop',
+    'mop-bucket-trolley',
+    'cleaning-trolley',
+    'housekeeping-trolley',
+    'cleaning-safety-signs',
+    'dustpan-with-brush',
+    'floor-cleaning-brush',
+    'toilet-brush',
+    'tissues',
+    'interfold-dispenser',
+    'tissue-dispenser',
+    'refillable-shampoo-bottle',
+    'linen-bath--bed',
+    'amenities',
+    'dishwashing-cleaning-items',
+    'cleaning-items',
+    'bathroom-cleaning-items',
+    'oud-ashtray-bin',
+    'steel-ashtray-bin',
+    'steel-pedal-dustbin',
+    'plastic-pedal-dustbin',
+    'recycle-bin',
+    'garbage-waste-dustbin'
+  ]
+  return slugs.map((slug) => ({
+    slug: slug,
+  }))
+}
+
 export default function ProductDetailPage({ params }: { params: { slug: string } }) {
   const product = getProductDetails(params.slug)
 
